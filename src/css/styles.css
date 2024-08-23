@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+
 @import url('./header.css');
 
 :root {
@@ -22,4 +22,93 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: currentColor;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.loader.visible {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery img {
+  border: 1px solid #808080;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 200px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 272px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+button {
+  padding: 10px 20px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#search-form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 55px;
+  border: 1px solid #808080;
+  width: 360px;
+
+}
+
+p {
+width: 34px;
+height: 40px;
+font-weight: 600;
 }
